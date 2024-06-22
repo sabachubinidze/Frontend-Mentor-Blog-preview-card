@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Figtree-bold';
+    src: url('assets/fonts/static/Figtree-ExtraBold.ttf') format('truetype');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(47, 88%, 63%);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 10px 10px 10px 10px;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.card img{
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.card-text h4{
+    font-family: Figtree-bold;
+    background-color: hsl(47, 88%, 63%);
+    padding: 5px 10px;
+    width: 87px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.card-text h3{
+    font-size: 15px;
+    font-family: Figtree;
+    margin-bottom: 15px;
+}
+
+.card-text h1{
+    font-family: Figtree-bold;
+    font-size: 25px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.card-text h1:hover{
+    color: hsl(47, 88%, 63%);
+}
+
+.card-text p {
+    font-family: 'Figtree-bold';
+    font-size: 16px;
+    color: hsl(0, 0%, 50%);
+    margin-bottom: 20px;
+}
+
+.card-text-img{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.card-text-img img{
+    height: 50px;
+}
+
+.card-text-img p{
+    color: black;
+}
+
+
+
+
+
+@media (max-width: 375px){
+    body{
+        padding: 20px;
+    }
+
+    .card-img img{
+        width: 100%;
+    }
+}
